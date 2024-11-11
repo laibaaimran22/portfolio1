@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+             
+        font: #ddb6b6; /* Adjust for accent color */
+            background-color: #2D3748; /* Adjust for dark mode or light mode */   
+    }
+    /* Add this to your global CSS file or specific component CSS */
+body {
+    color: #FFFFFF; /* Change this to your preferred font color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* Headings font color */
+}
+
+p {
+    color: #d3fbfc; /* Paragraph font color */
+}
+
+footer {
+    color: #AAAAAA; /* Footer font color */
+}
+
+
+}
+@layer components {
+    .menuLink {
+        @apply cursor-pointer hover:text-[#3a3a3a];
+    }
+    .tags{
+        background-color: #F6AD55 ;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 3px 10px;
+        display: inline-block;
+        color: #000000;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    .tags:last-child {
+        margin-right: 0;
+    }
+
+    .tags:nth-child(2){
+        background-color: #63B3ED;
+    }
+
+    .tags:nth-child(3){
+        background-color: #9AE3D5;
+    }
+
+    .tags:nth-child(4){
+        background-color: #FBB6CE;
+    }
+    
+}
